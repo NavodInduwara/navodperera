@@ -1,0 +1,173 @@
+:root{
+    --mainColor:#cc3314;
+    --txtColor:#CCCCCC;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: radial-gradient(#000000, #252525);
+    overflow-x: hidden;
+}
+
+#mainSection {
+    margin: 20px 20px 0px 20px;
+    outline: 2px solid var(--mainColor);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #252525;
+    display: flex;
+    z-index: 1;
+    background-image: url('/components/img/backgroundnav.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mainSectionAbout {
+    margin: 20px 20px 0px 20px;
+    outline: 2px solid var(--mainColor);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: #252525;
+    display: flex;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.mainTextArea {
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#sub {
+    margin-top: -70px;
+}
+p{
+    color:var(--txtColor);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#footerText {
+    color: var(--mainColor);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: -70px;
+    font-size: 12px;
+    margin-left: 50px;
+    position: absolute;
+    bottom: -8.5px;
+
+}
+
+h1,
+h2 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--txtColor);
+    font-size: 70px;
+
+}
+
+li a{
+    display: block;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--txtColor);
+    text-align: left;
+    margin-bottom: 10px;
+    width: 65px;
+
+}
+li .navA:hover {
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.iconA{
+    font-size: 15px;
+    
+}
+
+
+ul{
+    list-style-type:none;
+}
+
+#vrNavbar {
+    margin-left: -20px;
+    margin-top: 55px;
+}
+
+span {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+#navodDot{
+    font-size: 10px;
+}
+
+li .navA:hover {
+    
+    box-shadow: inset 100px 0 0 0 var(--mainColor);
+
+}
+
+#navActive {
+    opacity: 0.5;
+    
+}
+
+#navActive #activeSpan {
+    opacity: 1;
+    color: var(--mainColor);
+}
+
+.socialArea{
+    color: var(--txtColor);
+    position: absolute;
+    bottom: 25px;
+    margin-left: -20px;
+}
+
+.socialArea ul li{
+    float: left;
+    display: block;
+    margin-left: 5px;
+}
+.iconA{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: -20px;
+}
+.iconA:hover {
+    color: var(--mainColor);    
+  }
+    
+
+
+#abText{
+    width: 150px;
+    height: 100px;
+    color: var(--txtColor);
+    position:fixed;
+    right: 4%;
+    bottom: 15%;
+    font-family: "Kanit", sans-serif;
+}
+
+
+
