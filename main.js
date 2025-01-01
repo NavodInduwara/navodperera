@@ -8,7 +8,7 @@ let gridSpacing = 15; // Spacing between particles
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent("mainSection","mainSectionAbout");
+  canvas.parent("mainSection");
 
   // Apply canvas styles
   canvas.style("position", "absolute");
@@ -81,7 +81,7 @@ function draw() {
   background(0, 0, 0, 0); // Transparent background
   noStroke();
 
-  fill(204, 51, 20, 90); // Particle color
+  fill(118, 161, 218, 90); // Particle color
 
   for (let p of particles) {
     // Apply physics when the cursor is near
@@ -117,3 +117,35 @@ function windowResized() {
     select("canvas").show(); // Show canvas on larger screens
   }
 }
+
+
+//autoScrolling
+
+let scrollDirection = 1; // 1 for down, -1 for up
+const scrollableUl = document.getElementById('scrollableUl');
+const scrollableList = document.querySelector('.scrollable-list');
+
+function autoScroll() {
+  // Adjust scrollTop of the container
+  scrollableList.scrollTop += scrollDirection * 1;
+
+  // Check if the container is at the bottom
+  if (scrollableList.scrollTop + scrollableList.clientHeight >= scrollableList.scrollHeight) {
+    scrollDirection = -1; // Reverse direction
+    setTimeout(autoScroll, 2000); // Pause for 2 seconds at the bottom
+  } 
+  // Check if the container is at the top
+  else if (scrollableList.scrollTop <= 0) {
+    scrollDirection = 1; // Reverse direction
+    setTimeout(autoScroll, 2000); // Pause for 2 seconds at the top
+  } 
+  // Continue scrolling
+  else {
+    setTimeout(autoScroll, 30); // Smooth scrolling
+  }
+}
+
+// Start auto-scrolling
+autoScroll();
+
+//loding

@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=M+PLUS+Rounded+1c:wght@100&family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
-    
-        <title>About - Navod Perera</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=M+PLUS+Rounded+1c:wght@100&family=Zen+Kaku+Gothic+New:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+    <title>Navod Perera</title>
+</head>
+
 <body>
     <section id="mainSectionAbout">
         <div class="mainTextArea">
             <div class="heading">
-                <h1>Navod Perera<span id="navodDot"> ●</span></h1>
-                <p id="sub">Web Developer</p>
+                <h2>About Me<span id="navodDot"> ●</span></h2>
+                <!-- <p id="sub">Web Developer</p> -->
                 <div id="vrNavbar">
                     <ul>
-                        <li><a class="navA" href="" id="navActive"><span id="activeSpan">● </span>Home</a></li>
-                        <li><a class="navA" href="">About</a></li>
-                        <li><a class="navA" href="">Projects</a></li>
+                        <li><a class="navA" href="./index.html">Home</a></li>
+                        <li><a class="navA" href="#" id="navActive"><span id="activeSpan">● </span>About</a></li>
+                        <li><a class="navA" href="./projects.html">Projects</a></li>
                         <li><a class="navA" href="">Contact</a></li>
                         <li><a class="navA" href="">Album</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="socialArea">
-                <ul>
-                    <li><a class="iconA" href="https://www.linkedin.com/in/navodinduwara" target="_blank"><i class="fa fa-linkedin fa-x" aria-hidden="true"></i></a></li>
-                    <li><a class="iconA" href="https://x.com/navod_induwara" target="_blank"><i class="fa fa-twitter fa-x" aria-hidden="true"></i></a></li>
-                    <li><a class="iconA" href="https://www.facebook.com/navod.perera.71/" target="_blank"><i class="fa fa-facebook fa-x" aria-hidden="true"></i></a></li>
-                    <li><a class="iconA" href="https://www.instagram.com/navodinduwara/" target="_blank"><i class="fa fa-instagram fa-x" aria-hidden="true"></i></a></li>
-                    <li><a class="iconA" href="mailto:navodinduwara2000@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-x" aria-hidden="true"></i></a></li>
-                    <li><a class="iconA" href="https://wa.me/+94778623784" target="_blank"><i class="fa fa-whatsapp fa-x" aria-hidden="true"></i></a></li>
-
-
-                </ul>
-            </div>
         </div>
-        <div class="textArea">
-            <p id="abText">I'm in Gen Z,<br>
-                Hingurakgoda,<br>
-                Sri Lanka,<br>
-                I do anything that makes me happy.
-               Love and Money motivate me.
-            </p>
+        <div class="scrollingPlace">
+            <div class="scrollable-list">
+                <ul class="scrollableUl">
+                  <li>
+                    <h3>Basic info</h3>
+                    <p>I'm <span>Navod</span> Induwara Perera,</p>
+                    <p>Born in 2000,</p>
+                    <p><span>Fullstack</span> Web developer,</p>
+                    <p>Graduate from <span>Sout Eastern University</span> Sri Lanka,</p>
+                    <p>Lived in Hingurakgoda Sri Lanka,</p>
+                  </li>
+                  <li>
+                    <h3>Education info</h3>
+                    <p><span>BSc</span> in Physical Science Southeastern University,</p>
+                    <p>HD in <span>Computer Science and Software Engineering</span> ICBT Campus,</p>
+                    <p>GCE A/L Physical Science Stream,</p>
+                  </li>
+                  <li>
+                    <h3>Extracurricular activities</h3>
+                    <p>E-sports / Badminton / Volleyball / Chess,</p>
+                    <p>Union Member Uni,</p>
+                    <p>Junior / Senior Prefect,</p>
+                    <p>Member of School Drama Team,</p>
+                    <p>Member of School Debate Team,</p>
+                  </li>
+                  <li>
+                    <h3>Skills</h3>
+
+                    <h4>Computer languages</h4>
+                    <p class="exLevel"><span>C++</span> / <span>JAVA</span> / <span>Js</span> / Python / C# / PHP / <span>MySQL</span> / PgSQL</p>
+
+                    <h4>Web technologies</h4>
+                    <p class="exLevel"><span>MERN</span> / <span>Wordpress</span> / <span>HTML</span> / <span>CSS</span> / <span>Js</span> / PHP / <span>Bootstrap</span> / Laraval</p>
+
+                    <h4>Cloud technologies</h4>
+                    <p class="exLevel">AWS / <span>Shared Hosting</span></p>
+
+                    <h4>Languages</h4>
+                    <p class="exLevel"><span>Sinhala</span> / English</p>
+
+                    <h4>Other</h4>
+                    <p class="exLevel"><span>SEO</span> / <span>Ps</span> / Pr / <span>Team Working</span> / Communication / Figma / <span>Social media</span></p>
+                  </li>
+                  <li>
+                    <h3>Dounload the CV here</h3>
+                    <a class="iconA" href="./components/dounloadble/navodCV.pdf" target="_blank" download="Navod Perera CV"><i class="fa fa-download fa-2xl" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
         </div>
     </section>
     <footer>
@@ -59,4 +89,5 @@
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
